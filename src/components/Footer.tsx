@@ -21,7 +21,7 @@ export const Footer: React.FC = () => {
 
             {/* Action Buttons */}
             <div className="flex gap-4">
-                <Button onClick={() => window.open('https://x.com', '_blank')}>
+                <Button onClick={() => window.open('https://x.com/pussyclaude?s=21' '_blank')}>
                     <span className="font-sans font-bold text-lg leading-none mr-2 relative top-[-1px]">𝕏</span>
                     COMMUNITY
                 </Button>
