@@ -11,11 +11,19 @@ const QUOTES = [
 
 export const LivePage: React.FC = () => {
     const [quoteIndex, setQuoteIndex] = useState(0);
+    const [fade, setFade] = useState(true); // Control opacity
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setQuoteIndex(prev => (prev + 1) % QUOTES.length);
+            setFade(false); // Start fading out
+
+            setTimeout(() => {
+                setQuoteIndex(prev => (prev + 1) % QUOTES.length); // Change text while invisible
+                setFade(true); // Start fading in
+            }, 1000); // 1s fade out duration
+
         }, 8000); // Change quote every 8 seconds
+
         return () => clearInterval(interval);
     }, []);
 
@@ -29,11 +37,11 @@ export const LivePage: React.FC = () => {
 
             {/* Center Content: The Main Quote */}
             <div className="relative z-20 max-w-4xl text-center px-6">
-                <h2 className="text-xl md:text-3xl font-light text-stone-300 leading-relaxed tracking-wide font-sans drop-shadow-lg transition-opacity duration-1000 ease-in-out">
+                <h2 className={`text-xl md:text-3xl font-light text-stone-300 leading-relaxed tracking-wide font-sans drop-shadow-lg transition-opacity duration-1000 ease-in-out ${fade ? 'opacity-100' : 'opacity-0'}`}>
                     "{QUOTES[quoteIndex]}"
                 </h2>
-                <div className="mt-8 flex justify-center gap-2">
-                    <span className="text-orange-900 text-6xl opacity-50 font-serif">”</span>
+                <div className={`mt-8 flex justify-center gap-2 transition-opacity duration-1000 delay-300 ${fade ? 'opacity-50' : 'opacity-0'}`}>
+                    <span className="text-orange-900 text-6xl font-serif">”</span>
                 </div>
             </div>
 

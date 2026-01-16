@@ -2,7 +2,7 @@ import React from 'react';
 
 export const ExperimentPage: React.FC = () => {
     return (
-        <div className="w-full h-full flex flex-col items-center overflow-y-auto scrollbar-thin scrollbar-thumb-stone-800 p-6 md:p-12">
+        <div className="w-full h-full flex flex-col items-center overflow-y-auto scrollbar-thin scrollbar-thumb-stone-800 p-6 md:p-12 pt-24 md:pt-32">
 
             {/* Centered Title */}
             <div className="flex flex-col items-center mb-16 relative">

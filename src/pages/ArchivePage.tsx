@@ -10,7 +10,7 @@ const ARCHIVES = [
 
 export const ArchivePage: React.FC = () => {
     return (
-        <div className="w-full h-full flex flex-col items-center relative overflow-hidden pt-8 md:pt-12 px-4 md:px-8">
+        <div className="w-full h-full flex flex-col items-center relative overflow-hidden pt-20 md:pt-32 px-4 md:px-8">
 
             {/* Archive Header - Centered */}
             <div className="w-full max-w-5xl flex-none pb-16 z-10 border-b border-white/5 mb-8">
