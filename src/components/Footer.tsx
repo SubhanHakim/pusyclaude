@@ -3,13 +3,13 @@ import React from 'react';
 export const Footer: React.FC = () => {
 
     const copyCA = () => {
-        const ca = "CA_ADDRESS_HERE"; // Placeholder
+        const ca = "91LYqgG8R21mmsPqLmN7ajp1dR4UGjn46LfCgfecpump"; // Placeholder
         navigator.clipboard.writeText(ca);
         alert(`COPIED: ${ca}`);
     };
 
     const openCommunity = () => {
-        window.open('https://x.com', '_blank');
+        window.open('https://x.com/i/communities/2012292789153972348', '_blank');
     };
 
     return (
@@ -25,7 +25,7 @@ export const Footer: React.FC = () => {
 
             {/* Action Buttons */}
             <div className="flex gap-4">
-                <Button onClick={() => window.open('https://x.com', '_blank')}>
+                <Button onClick={() => window.open('https://x.com/i/communities/2012292789153972348', '_blank')}>
                     <span className="font-sans font-bold text-lg leading-none mr-2 relative top-[-1px]">𝕏</span>
                     COMMUNITY
                 </Button>
