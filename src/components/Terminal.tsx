@@ -9,7 +9,7 @@ const GENERATED_LOGS = [
     "Temporal anomaly registered",
     "Input buffer: clear",
     "Silence speaks in frequencies we ignore",
-    "System: PUSY CLAUDE initialized",
+    "System: PUSSY CLAUDE initialized",
     "Observing the observer...",
     "Data stream: synchronizing",
     "Void state: confirmed",

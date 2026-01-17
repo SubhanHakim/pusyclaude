@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
                 {/* Image Container with Scanline Clip or Filter */}
                 <img
                     src={logo}
-                    alt="Pusy Claude Symbol"
+                    alt="Pussy Claude Symbol"
                     className="
                 w-[320px] h-[320px] md:w-[500px] md:h-[500px] 
                 object-contain 
