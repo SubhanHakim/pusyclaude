@@ -37,7 +37,7 @@ export const Header: React.FC<HeaderProps> = ({ currentPage, onNavigate }) => {
                 <div className="flex flex-col gap-2">
                     <h1 className="text-3xl md:text-4xl font-bold tracking-[0.2em] text-white hover:text-orange-500 transition-colors cursor-pointer select-none font-sans"
                         onClick={() => onNavigate('live')}>
-                        PUSY CLAUDE
+                        PUSSY CLAUDE
                     </h1>
 
                     {/* Minimalist Stats */}
