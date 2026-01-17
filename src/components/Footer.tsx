@@ -8,6 +8,10 @@ export const Footer: React.FC = () => {
         alert(`COPIED: ${ca}`);
     };
 
+    const openCommunity = () => {
+        window.open('https://x.com', '_blank');
+    };
+
     return (
         <footer className="w-full relative z-20 flex flex-col md:flex-row justify-between items-end pb-2 ">
             {/* Narrative Elements */}
@@ -21,7 +25,7 @@ export const Footer: React.FC = () => {
 
             {/* Action Buttons */}
             <div className="flex gap-4">
-                <Button onClick={() => window.open('https://x.com', '_blank')}>
+                <Button onClick={openCommunity}>
                     <span className="font-sans font-bold text-lg leading-none mr-2 relative top-[-1px]">𝕏</span>
                     COMMUNITY
                 </Button>
