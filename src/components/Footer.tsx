@@ -8,10 +8,6 @@ export const Footer: React.FC = () => {
         alert(`COPIED: ${ca}`);
     };
 
-    const openCommunity = () => {
-        window.open('https://x.com/i/communities/2012292789153972348', '_blank');
-    };
-
     return (
         <footer className="w-full relative z-20 flex flex-col md:flex-row justify-between items-end pb-2 ">
             {/* Narrative Elements */}
